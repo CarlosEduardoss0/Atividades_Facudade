@@ -1,0 +1,27 @@
+   
+package calculo;
+
+import java.util.Scanner;
+
+public class Calculo {
+  public static void main(String[] args) {
+    Scanner ler = new Scanner(System.in);
+
+  int x, a, b;
+  
+ 
+   System.out.printf("x=");
+    x = ler.nextInt();
+    
+   System.out.printf("a=");
+    a = ler.nextInt();
+    
+   System.out.printf("b=");
+    b = ler.nextInt();
+  
+    double fx = a*(x)+b;
+  
+   System.out.println("f("+x+")="+a+"*("+x+")+"+b);
+   System.out.printf("f("+x+")="+fx); 
+}
+}
