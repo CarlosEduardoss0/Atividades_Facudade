@@ -1,0 +1,39 @@
+package pescaesportiva;
+
+ public class Local {
+	
+	//Atributos
+	String endereco;
+	String cidade;
+	String cep;
+	String latitude;
+	String longitude;
+	//construtor = Criar os objetos
+	Local(String endereco, String cidade, String cep, String latitude, String longitude){
+		//Inicializando oa Atributos
+		this.endereco = endereco;
+		this.cidade = cidade;
+		this.cep = cep;
+		this.latitude = latitude;
+		this.longitude = longitude;
+	}
+	Local(){//Declaração um objeto de teste
+		this.endereco = "Rua 1";
+		this.cidade ="Nenhum" ;
+		this.cep ="000-000";
+		this.latitude = "0000.00";
+		this.longitude ="00000-00";
+	}
+	//Metodos
+	public void imprimir () {
+
+	
+	//Metodos
+	public void checarCEP() {
+		System.oit.print("endereço = "+ this.endereco);
+		System.out.println("cidade = "+ this.cidade);
+		System.out.println(""+);
+		System.out.println(""+);	
+	}
+	}
+	}
