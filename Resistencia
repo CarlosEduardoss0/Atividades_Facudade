@@ -1,0 +1,32 @@
+package resistencia;
+import java.util.Scanner;
+public class Resistencia {
+	public static void main (String [] args) {
+		double r1,r2,r3,resistencia;
+		Scanner ler= new Scanner(System.in);
+		System.out.print("Adicione o valor da resistencia 1:");
+		r1 =ler.nextDouble();
+		System.out.print("Adicione o valor da resistencia 2:");
+		r2 =ler.nextDouble();
+		System.out.print("Adicione o valor da resistencia 3:");
+		r3 =ler.nextDouble();
+		System.out.print("Digite 1 ou 2 :");
+		String opcao = ler.next();
+		
+		switch (opcao) {
+		case "1":{
+			resistencia= r1+r2+r3;
+			break;
+		}
+		case"2":{
+			resistencia=(1/r1)+(1/r2)+(1/r2);
+			break;
+		}
+		default:{
+			System.out.println("opção Invalida");
+			resistencia = 0;
+		}
+		}
+		System.out.printf("Resistencia total e igual a: %.3f",resistencia);
+	}
+}
